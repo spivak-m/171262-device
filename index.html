@@ -3,38 +3,39 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Device | Main page</title>
+		<link href="css/normalize.css" rel="stylesheet">
 		<link href="css/styles.css" rel="stylesheet">
 	</head>
-	<body>
+	<body class="index-page">
 		<header class="site-header clearfix">
-			<div class="left-side">
+			<div class="l-side">
 				<a class="site-logo" href="#">Device</a>
 				
 				<form class="header-search" method="get" action="#">
 					<input class="header-search__input" type="search" name="search" placeholder="Поиск по сайту">
-					<button class="header-search__submit" type="submit">Найти</button>
+					<button class="header-search__btn" type="submit">Найти</button>
 				</form>
 				
 				<nav class="header-nav">
-					<span class="header-nav__catalog">Катаог товаров</span>
+					<a class="header-nav__catalog" href="#">Каталог товаров</a>
 					<div class="header-nav__dropdown">
 						<ul class="header-nav__list">
-							<li class="header-nav__item"><a class="header-nav__link" href="#">Виртуальная реальность</a></li>
-							<li class="header-nav__item"><a class="header-nav__link" href="#">Моноподы для селфи</a></li>
-							<li class="header-nav__item"><a class="header-nav__link" href="#">Экшн-камеры</a></li>
+							<li class="header-nav__item"> <a class="header-nav__link" href="#">Виртуальная реальность</a> </li>
+							<li class="header-nav__item"> <a class="header-nav__link" href="#">Моноподы для селфи</a> </li>
+							<li class="header-nav__item"> <a class="header-nav__link" href="#">Экшн-камеры</a> </li>
 						</ul>
 						<ul class="header-nav__list">
-							<li class="header-nav__item"><a class="header-nav__link" href="#">Фитнесс браслеты</a></li>
-							<li class="header-nav__item"><a class="header-nav__link" href="#">Умные часы</a></li>
+							<li class="header-nav__item"> <a class="header-nav__link" href="#">Фитнесс браслеты</a> </li>
+							<li class="header-nav__item"> <a class="header-nav__link" href="#">Умные часы</a> </li>
 						</ul>
 						<ul class="header-nav__list">
-							<li class="header-nav__item"><a class="header-nav__link" href="#">Квадрокоптеры</a></li>
+							<li class="header-nav__item"> <a class="header-nav__link" href="#">Квадрокоптеры</a> </li>
 						</ul>
 					</div>
 				</nav>
 			</div>
 			
-			<div class="right-side">
+			<div class="r-side">
 				<section class="header-user-block">
 					<ul class="user-block user-block--unauthorized">
 						<li class="user-block__item user-block__item--unauthorized"> <a class="user-block__link user-block__link--log-in" href="#">Войти</a> </li>
@@ -55,6 +56,10 @@
 		
 		<main>
 			<section class="slider">
+				<input type="radio" name="slider" id="slide-1" checked>
+				<input type="radio" name="slider" id="slide-2">
+				<input type="radio" name="slider" id="slide-3">
+					
 				<div class="slider__item slide slide-1 clearfix">
 					<div class="slide__l-side">
 						<img class="slide__pic" src="img/index/banner-1.png" width="384" height="486" alt="">
@@ -67,7 +72,7 @@
 						<p class="slide__description">
 							Самая длинная палка для селфи доступна в нашем магазине. 
 							Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-						<a class="slide__more">Подробнее</a>
+						<a class="slide__more" href="#">Подробнее</a>
 						
 						<div class="slide__features slide-feature">
 							<div class="slide-feature__item">
@@ -98,7 +103,7 @@
 						<p class="slide__description">
 							Мотивирующие фитнесс-браслеты помогут найти в себе силы
 							не пропускать занятия и соблюдать диету.</p>
-						<a class="slide__more">Подробнее</a>
+						<a class="slide__more" href="#">Подробнее</a>
 						
 						<div class="slide__features slide-feature">
 							<div class="slide-feature__item">
@@ -121,7 +126,7 @@
 						<p class="slide__description">
 							Этот обычный, на первый взгляд, квадрокоптер оснащен 
 							мощным лазером, замаскированым под стандартную камеру.</p>
-						<a class="slide__more">Подробнее</a>
+						<a class="slide__more" href="#">Подробнее</a>
 						
 						<div class="slide__features slide-feature">
 							<div class="slide-feature__item">
@@ -137,9 +142,6 @@
 				</div>
 				
 				<div class="slider__controls">
-					<input type="radio" name="slider" id="slide-1">
-					<input type="radio" name="slider" id="slide-2">
-					<input type="radio" name="slider" id="slide-3">
 					<label for="slide-1"></label>
 					<label for="slide-2"></label>
 					<label for="slide-3"></label>
@@ -157,36 +159,39 @@
 				</ul>
 			</section>
 			
-			<section class="services-slider clearfix">
-				<div class="services-slider__controls">
-					<input type="radio" name="services" id="delivery">
-					<input type="radio" name="services" id="warranty">
-					<input type="radio" name="services" id="credit">
-					<label for="delivery">Доставка</label>
-					<label for="warranty">Гарантия</label>
-					<label for="credit">Кредит</label>
-				</div>
-				
-				
-				<div class="services-slider__slide services-slider__slide--delivery">
-					<h2>Доставка</h2>
-					<p>Мы с удовольствием доставим ваш товар прямо к вашему 
-					   подъезду совершенно бесплатно! Ведь мы неплохо 
-					   заработаем, поднимая его на ваш этаж.</p>
-				</div>
-				
-				<div class="services-slider__slide services-slider__slide--warranty">
-					<h2>Гарантия</h2>
-					<p>Если из-за возгарания купленного у нас товара у вас сгорит 
-					   дом — не переживайте, мы выдадим вам новый.
-					   Товар, не дом, конечно же.</p>
-				</div>
-				
-				<div class="services-slider__slide services-slider__slide--credit">
-					<h2>Кредит</h2>
-					<p>Залезть в долговую яму стало проще! Кредитные 
-					   консультанты подберут для вас наиболее выгодные 
-					   условия кредита. Выгодные для нашего банка, разумеется.</p>
+			<section class="services-slider">
+				<div class="wrap clearfix">
+					<input type="radio" name="services" id="delivery-slide" checked>
+					<input type="radio" name="services" id="warranty-slide">
+					<input type="radio" name="services" id="credit-slide">
+						
+					<div class="services-slider__controls">
+						<label class="btn" for="delivery-slide">Доставка</label>
+						<label class="btn" for="warranty-slide">Гарантия</label>
+						<label class="btn" for="credit-slide">Кредит</label>
+					</div>
+					
+					
+					<div class="services-slider__slide services-slider__slide--delivery">
+						<h2>Доставка</h2>
+						<p>Мы с удовольствием доставим ваш товар прямо к вашему 
+						   подъезду совершенно бесплатно! Ведь мы неплохо 
+						   заработаем, поднимая его на ваш этаж.</p>
+					</div>
+					
+					<div class="services-slider__slide services-slider__slide--warranty">
+						<h2>Гарантия</h2>
+						<p>Если из-за возгарания купленного у нас товара у вас сгорит 
+						   дом — не переживайте, мы выдадим вам новый.
+						   Товар, не дом, конечно же.</p>
+					</div>
+					
+					<div class="services-slider__slide services-slider__slide--credit">
+						<h2>Кредит</h2>
+						<p>Залезть в долговую яму стало проще! Кредитные 
+						   консультанты подберут для вас наиболее выгодные 
+						   условия кредита. Выгодные для нашего банка, разумеется.</p>
+					</div>
 				</div>
 			</section>
 			
@@ -228,38 +233,40 @@
 			</div>
 		</main>
 		
-		<footer class="site-footer clearfix">
-			<div class="col col-1">
-				<a class="site-logo">Device</a>
-				<span class="address">г. Москва, ул. Строителей, 15</span>
-			</div>
-			
-			<div class="col col-2">
-				<ul class="footer-services">
-					<li class="footer-services__item"> <a class="footer-services__link" href="#">Доставка</a> </li>
-					<li class="footer-services__item"> <a class="footer-services__link" href="#">Гарантия</a> </li>
-					<li class="footer-services__item"> <a class="footer-services__link" href="#">Контакты</a> </li>
-				</ul>
+		<footer class="site-footer">
+			<div class="wrap clearfix">
+				<div class="col col-1">
+					<a class="site-logo" href="#">Device</a>
+					<span class="address">г. Москва, ул. Строителей, 15</span>
+				</div>
 				
-				<ul class="footer-social">
-					<li class="footer-social__item"> <a class="footer-social__link" href="#">Facebook</a> </li>
-					<li class="footer-social__item"> <a class="footer-social__link" href="#">Instagram</a> </li>
-					<li class="footer-social__item"> <a class="footer-social__link" href="#">Tweeter</a> </li>
-				</ul>
-			</div>
-			
-			<div class="col col-3">
-				<section class="footer-user-block">
-					<ul class="user-block user-block--unauthorized">
-						<li class="user-block__item user-block__item--unauthorized"> <a class="user-block__link user-block__link--log-in" href="#">Войти</a> </li>
-						<li class="user-block__item user-block__item--authorized"> <a class="user-block__link user-block__link--log-out" href="#">Выйти</a> </li>
-						<li class="user-block__item"> <a class="user-block__link user-block__link--compare" href="#">Сравнить</a> </li>
-						<li class="user-block__item"> <a class="user-block__link user-block__link--cart" href="#">Корзина</a> </li>
+				<div class="col col-2">
+					<ul class="footer-services">
+						<li class="footer-services__item"> <a class="footer-services__link" href="#">Доставка</a> </li>
+						<li class="footer-services__item"> <a class="footer-services__link" href="#">Гарантия</a> </li>
+						<li class="footer-services__item"> <a class="footer-services__link" href="#">Контакты</a> </li>
 					</ul>
-				</section>
+					
+					<ul class="footer-social">
+						<li class="footer-social__item"> <a class="footer-social__link footer-social__link--fb" href="#">Facebook</a> </li>
+						<li class="footer-social__item"> <a class="footer-social__link footer-social__link--insta" href="#">Instagram</a> </li>
+						<li class="footer-social__item"> <a class="footer-social__link footer-social__link--tw" href="#">Tweeter</a> </li>
+					</ul>
+				</div>
 				
-				<span class="tel">Тел.: +7 (495) 495-95-95</span>
-				<a class="ha-logo" href="">HA</a>
+				<div class="col col-3">
+					<section class="footer-user-block">
+						<ul class="user-block user-block--unauthorized">
+							<li class="user-block__item user-block__item--unauthorized"> <a class="user-block__link user-block__link--log-in" href="#">Войти</a> </li>
+							<li class="user-block__item user-block__item--authorized"> <a class="user-block__link user-block__link--log-out" href="#">Выйти</a> </li>
+							<li class="user-block__item"> <a class="user-block__link user-block__link--compare" href="#">Сравнить</a> </li>
+							<li class="user-block__item"> <a class="user-block__link user-block__link--cart" href="#">Корзина</a> </li>
+						</ul>
+					</section>
+					
+					<span class="tel">Тел.: +7 (495) 495-95-95</span>
+					<a class="ha-logo" href="">HA</a>
+				</div>
 			</div>
 		</footer>
 	</body>
