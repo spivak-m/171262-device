@@ -1086,8 +1086,8 @@ h2
 {
     display: inline-block;
 
-    width: 4px;
-    height: 4px;
+    width: 10px;
+    height: 10px;
     margin-right: 22px;
 
     cursor: pointer;
@@ -2506,4 +2506,294 @@ h2
 .paginator__next
 {
     right: 0;
+}
+
+.write-us-popup
+{
+    position: fixed;
+    z-index: 10;
+    top: 0;
+
+    display: none;
+    overflow-y: auto;
+
+    width: 100%;
+    height: 100%;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.write-us-popup-show
+{
+    display: flex;
+}
+
+.write-us
+{
+    font-size: 0;
+
+    position: relative;
+
+    width: 960px;
+    padding: 94px 100px 80px;
+
+    background-color: #fff;
+    box-shadow: 0 3px 30px -5px;
+}
+
+.write-us > *
+{
+    font-size: 14px;
+}
+
+.write-us .wrap-half
+{
+    display: inline-block;
+
+    width: 360px;
+    margin-bottom: 36px;
+}
+
+.write-us .wrap-half:first-of-type
+{
+    margin-right: 40px;
+}
+
+.write-us .input-title
+{
+    font-family: 'Gilroy';
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 20px;
+
+    display: inline-block;
+
+    margin-bottom: 10px;
+}
+
+.write-us input,
+.write-us textarea
+{
+    font-family: 'Open Sans';
+    line-height: 20px;
+
+    display: block;
+
+    width: 100%;
+    padding: 15px 20px;
+
+    border: none;
+    outline: none;
+    background-color: #f2f2f2;
+}
+
+.write-us input:hover,
+.write-us textarea:hover
+{
+    background-color: #ebebeb;
+}
+
+.write-us input:focus,
+.write-us textarea:focus
+{
+    padding: 13px 18px;
+
+    border: 2px solid #e5e5e5;
+    background-color: transparent;
+}
+
+/* .write-us input:invalid,
+.write-us textarea:invalid {
+	background-color: #ffdada;
+} */
+
+.write-us textarea
+{
+    margin-bottom: 44px;
+}
+
+.write-us .submit-btn
+{
+    font-family: 'Gilroy';
+    font-size: 18px;
+    font-weight: 800;
+
+    position: relative;
+    z-index: 1;
+
+    display: block;
+
+    width: 200px;
+    padding: 10px;
+
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+    color: rgba(0, 0, 0, 1);
+    border: none;
+    background-color: transparent;
+}
+
+.write-us .submit-btn::before
+{
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 0;
+
+    width: 100%;
+    height: 8px;
+    margin-top: -4px;
+
+    content: '';
+
+    background-color: #ffc600;
+}
+
+.write-us .submit-btn:hover::before
+{
+    top: 0;
+
+    height: 100%;
+    margin: 0;
+
+    transition: .2s;
+}
+
+.write-us .submit-btn:active
+{
+    color: rgba(0, 0, 0, .3);
+}
+
+.write-us .close-btn
+{
+    position: absolute;
+    top: 22px;
+    right: 22px;
+
+    width: 54px;
+    height: 54px;
+
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    background-color: #ffe27f;
+}
+
+.write-us .close-btn:hover,
+.write-us .close-btn:focus
+{
+    background-color: #ffc600;
+}
+
+.write-us .close-btn:active::before,
+.write-us .close-btn:active::after
+{
+    background-color: rgba(255, 255, 255, .3);
+}
+
+
+.write-us .close-btn::before,
+.write-us .close-btn::after
+{
+    position: absolute;
+    top: 26px;
+    left: 12px;
+
+    display: block;
+
+    width: 30px;
+    height: 2px;
+
+    content: '';
+    transform: rotate(135deg);
+
+    background-color: #fff;
+}
+
+.write-us .close-btn::after
+{
+    transform: rotate(45deg);
+}
+
+.map-popup
+{
+    position: fixed;
+    z-index: 10;
+    top: 0;
+
+    display: none;
+
+    width: 100%;
+    height: 100%;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.map-popup-show
+{
+    display: flex;
+}
+
+.map-popup .map-wrap
+{
+    position: relative;
+
+    background-color: #fff;
+    box-shadow: 0 3px 30px -5px;
+}
+
+.map-popup .close-btn
+{
+    position: absolute;
+    top: 22px;
+    right: 22px;
+
+    width: 54px;
+    height: 54px;
+
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    background-color: rgba(255, 198, 0, .5);
+}
+
+.map-popup .close-btn:hover,
+.map-popup .close-btn:focus
+{
+    background-color: rgba(255, 198, 0, 1);
+}
+
+.map-popup .close-btn:active::before,
+.map-popup .close-btn:active::after
+{
+    background-color: rgba(255, 255, 255, .3);
+}
+
+
+.map-popup .close-btn::before,
+.map-popup .close-btn::after
+{
+    position: absolute;
+    top: 26px;
+    left: 12px;
+
+    display: block;
+
+    width: 30px;
+    height: 2px;
+
+    content: '';
+    transform: rotate(135deg);
+
+    background-color: #fff;
+}
+
+.map-popup .close-btn::after
+{
+    transform: rotate(45deg);
 }

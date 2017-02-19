@@ -21,7 +21,7 @@
 					<div class="header-nav__dropdown">
 						<ul class="header-nav__list">
 							<li class="header-nav__item"> <a class="header-nav__link" href="#">Виртуальная реальность</a> </li>
-							<li class="header-nav__item"> <a class="header-nav__link" href="#">Моноподы для селфи</a> </li>
+							<li class="header-nav__item"> <a class="header-nav__link" href="catalog.html">Моноподы для селфи</a> </li>
 							<li class="header-nav__item"> <a class="header-nav__link" href="#">Экшн-камеры</a> </li>
 						</ul>
 						<ul class="header-nav__list">
@@ -151,7 +151,7 @@
 			<section class="popular">
 				<ul class="popular__list">
 					<li class="popular__item"> <a class="popular__link" href="#">Виртуальная реальность</a> </li>
-					<li class="popular__item"> <a class="popular__link" href="#">Моноподы для селфи</a> </li>
+					<li class="popular__item"> <a class="popular__link" href="catalog.html">Моноподы для селфи</a> </li>
 					<li class="popular__item"> <a class="popular__link" href="#">Экшн-камеры</a> </li>
 					<li class="popular__item"> <a class="popular__link" href="#">Фитнесс браслеты</a> </li>
 					<li class="popular__item"> <a class="popular__link" href="#">Умные часы</a> </li>
@@ -225,10 +225,10 @@
 					<p>
 						Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете 
 						проверить работоспособность покупки. Всякое бывает.</p>
-					<a class="map-prev" href="">
+					<a class="map-prev js-mapPrev" href="">
 						<img src="img/index/map.jpg" width="560" height="222" alt="map">
 					</a>
-					<a class="btn" href="#">Напишите нам</a>
+					<a class="btn js-contactUs" href="#">Напишите нам</a>
 				</section>
 			</div>
 		</main>
@@ -269,5 +269,30 @@
 				</div>
 			</div>
 		</footer>
+		
+		<div class="write-us-popup">
+			<form class="write-us" method="post" action="#" name="write-us">
+				<div class="wrap-half">
+					<span class="input-title">Ваше имя:</span>
+					<input type="text" name="your-name" placeholder="Представтесь, пожалуйста" required>
+				</div>
+				<div class="wrap-half">
+					<span class="input-title">Ваш e-mail:</span>
+					<input type="email" name="your-email" placeholder="Для отправки ответа" required>
+				</div>
+				<span class="input-title">Текст письма:</span>
+				<textarea name="your-text" rows="4" placeholder="В свободной форме" required></textarea>
+				<button class="submit-btn" type="submit">Отправить</button>
+				<button class="close-btn" type="button"></button>
+			</form>
+		</div>
+		
+		<div class="map-popup">
+			<div class="map-wrap">
+				<iframe src="https://api-maps.yandex.ru/frame/v1/-/CZtouSKG" width="960" height="560" frameborder="0"></iframe>
+				<button type="button" class="close-btn"></button>
+			</div>
+		</div>
+		<script src="js/script.js"></script>
 	</body>
 </html>
