@@ -8,6 +8,7 @@ html {
 }
 @font-face {
 	font-family: 'Open Sans';
+	font-weight: 500;
 	src: url(../fonts/opensans.woff),
  url(../fonts/opensans.woff2);
 }
@@ -40,8 +41,8 @@ body {
 	margin: 0 auto;
 	color: #000;
 }
-h1,
-h2 {
+body h1,
+body h2 {
 	font-family: 'Gilroy', 'Helvetica', sans-serif;
 	font-size: 47px;
 	line-height: 52px;
@@ -1154,41 +1155,40 @@ h2 {
 	cursor: default;
 	color: rgba(0, 0, 0, .3);
 }
-.catalog-wrap {
-	display: table;
+.wrap-gradient {
 	width: 100%;
 }
-.catalog-wrap .table-row {
-	display: table-row;
-	width: 100%;
+.wrap-gradient.color-1 {
+	background: -webkit-linear-gradient(left, #dbdbdb 31.4%, #ebebeb 31.4%);
+	background: -moz-linear-gradient(left, #dbdbdb 31.4%, #ebebeb 31.4%);
+	background: -o-linear-gradient(left, #dbdbdb 31.4%, #ebebeb 31.4%);
+	background: -ms-linear-gradient(left, #dbdbdb 31.4%, #ebebeb 31.4%);
+	background: linear-gradient(to right, #dbdbdb 31.4%, #ebebeb 31.4%);
 }
-.catalog-wrap .table-col {
-	display: table-cell;
-	width: 31.4%;
-	vertical-align: top;
+.wrap-gradient.color-2 {
+	background: -webkit-linear-gradient(left, #ebebeb 31.4%, #fff 31.4%);
+	background: -moz-linear-gradient(left, #ebebeb 31.4%, #fff 31.4%);
+	background: -o-linear-gradient(left, #ebebeb 31.4%, #fff 31.4%);
+	background: -ms-linear-gradient(left, #ebebeb 31.4%, #fff 31.4%);
+	background: linear-gradient(to right, #ebebeb 31.4%, #fff 31.4%);
 }
-.catalog-wrap .table-col:nth-child(2) {
-	width: 68.6%;
-}
-.catalog-wrap .table-col.bg-grey {
-	background-color: #ebebeb;
-}
-.catalog-wrap .table-col.bg-darkgrey {
-	background-color: #ddd;
+.wrap-center {
+	width: 1200px;
+	padding: 0 20px;
+	margin: 0 auto;
 }
 .filter-head,
 .filter {
 	display: block;
-	width: 348px;
-	margin-left: auto;
-	padding-right: 67px;
-	padding-left: 76px;
+	width: 328px;
+	float: left;
+	padding-right: 66px;
+	padding-left: 57px;
 }
 .sorting,
 .catalog-content {
-	width: 852px;
-	margin-right: auto;
-	padding-right: 20px;
+	width: 832px;
+	float: right;
 	padding-left: 72px;
 }
 .sorting {
@@ -1454,7 +1454,7 @@ h2 {
 .sorting-order {
 	position: absolute;
 	top: 20px;
-	right: 20px;
+	right: 0;
 	width: 60px;
 }
 .sorting-order__btn {
